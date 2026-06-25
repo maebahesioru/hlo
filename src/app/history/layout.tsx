@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+const SITE_URL = "https://maebahesioru.github.io/hlo";
+
 export const metadata: Metadata = {
   title: "沿革",
   description:
@@ -12,5 +14,32 @@ export const metadata: Metadata = {
 };
 
 export default function HistoryLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "HLO トップ",
+                item: SITE_URL,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "沿革",
+                item: `${SITE_URL}/history`,
+              },
+            ],
+          }),
+        }}
+      />
+      {children}
+    </>
+  );
 }

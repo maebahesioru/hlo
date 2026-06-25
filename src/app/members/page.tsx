@@ -22,7 +22,11 @@ function MemberCard({ m, special, section }: { m: { name: string; role: string; 
       <div className="relative mb-3 overflow-hidden rounded-lg">
         <img
           src={getAvatar(m.id)}
-          alt={m.name}
+          alt={`${m.name} (${m.id}) のプロフィール画像`}
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async"
           className={`w-full aspect-square object-cover border-2 ${
             special ? "border-hlo-red" : "border-white/10"
           } group-hover:scale-105 transition-transform duration-300`}

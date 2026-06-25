@@ -314,7 +314,11 @@ export default function Home() {
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
                   src="/hlo/members-bg.jpg"
-                  alt="構成個体"
+                  alt="HLO構成個体 - メンバー一覧"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -340,7 +344,11 @@ export default function Home() {
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
                   src="/hlo/history-bg.jpg"
-                  alt="沿革"
+                  alt="HLO沿革 - 設立からのあゆみ"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>

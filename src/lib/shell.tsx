@@ -24,6 +24,14 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      {/* Skip to content */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-hlo-red focus:text-white focus:font-bold focus:text-sm focus:outline-none"
+      >
+        コンテンツにスキップ
+      </a>
+
       {/* Nav */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -38,6 +46,8 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               <img
                 src="/hlo/avatars/hikain_lib.jpg"
                 alt="HLO"
+                width="400"
+                height="400"
                 className="w-9 h-9 rounded-full border-2 border-hlo-red group-hover:scale-110 transition-transform flex-shrink-0 object-cover"
               />
               <span className="hidden sm:block text-sm font-bold tracking-widest text-hlo-white/80 group-hover:text-hlo-red transition-colors">
@@ -104,7 +114,9 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
       </nav>
 
       {/* Content */}
-      {children}
+      <main id="main-content" className="flex-1">
+        {children}
+      </main>
 
       {/* Footer */}
       <footer className="relative py-16 px-4 sm:px-6 lg:px-8 border-t border-white/5 bg-hlo-dark">
@@ -114,6 +126,8 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               <img
                 src="/hlo/avatars/hikain_lib.jpg"
                 alt="HLO"
+                width="400"
+                height="400"
                 className="w-8 h-8 rounded-full border border-hlo-red/50 flex-shrink-0 object-cover"
               />
               <div>
