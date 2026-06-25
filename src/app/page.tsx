@@ -313,7 +313,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
-                  src="/members-bg.jpg"
+                  src="/hlo/members-bg.jpg"
                   alt="構成個体"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -339,7 +339,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
-                  src="/history-bg.jpg"
+                  src="/hlo/history-bg.jpg"
                   alt="沿革"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

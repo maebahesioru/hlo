@@ -39,17 +39,17 @@ export const ideologies = [
 ];
 
 const memberAvatars: Record<string, string> = {
-  maebahesioru2: "/avatars/maebahesioru2.jpg",
-  Onlygod_mania: "/avatars/Onlygod_mania.jpg",
-  ikisugi_mani: "/avatars/ikisugi_mani.jpg",
-  x_inmuou: "/avatars/x_inmuou.jpg",
-  YamagamiShinzou: "/avatars/YamagamiShinzou.jpg",
-  kaihatusyazai: "/avatars/kaihatusyazai.jpg",
-  qq26k: "/avatars/qq26k.jpg",
-  ponkotu_pasokon: "/avatars/ponkotu_pasokon.jpg",
-  Nijikamer: "/avatars/Nijikamer.jpg",
-  MakeHikamaniGre: "/avatars/MakeHikamaniGre.jpg",
-  harupon3rd: "/avatars/harupon3rd.jpg",
+  maebahesioru2: "/hlo/avatars/maebahesioru2.jpg",
+  Onlygod_mania: "/hlo/avatars/Onlygod_mania.jpg",
+  ikisugi_mani: "/hlo/avatars/ikisugi_mani.jpg",
+  x_inmuou: "/hlo/avatars/x_inmuou.jpg",
+  YamagamiShinzou: "/hlo/avatars/YamagamiShinzou.jpg",
+  kaihatusyazai: "/hlo/avatars/kaihatusyazai.jpg",
+  qq26k: "/hlo/avatars/qq26k.jpg",
+  ponkotu_pasokon: "/hlo/avatars/ponkotu_pasokon.jpg",
+  Nijikamer: "/hlo/avatars/Nijikamer.jpg",
+  MakeHikamaniGre: "/hlo/avatars/MakeHikamaniGre.jpg",
+  harupon3rd: "/hlo/avatars/harupon3rd.jpg",
 };
 
 export const getAvatar = (id: string) => memberAvatars[id.replace("@", "")] || "";
