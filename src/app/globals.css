@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-hlo-red: #c1121f;
+  --color-hlo-dark: #08080f;
+  --color-hlo-navy: #0f0f23;
+  --color-hlo-gold: #c9a84c;
+  --color-hlo-white: #f0ece4;
+  --color-hlo-gray: #888899;
+  --font-sans: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+  --font-display: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+}
+
+:root {
+  --background: #08080f;
+  --foreground: #f0ece4;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1121f;
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background: #c1121f;
+  color: #f0ece4;
+}
+
+/* Stripe pattern animation */
+@keyframes stripeSlide {
+  from { background-position: 0 0; }
+  to { background-position: 40px 0; }
+}
+
+.stripe-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(193, 18, 31, 0.15) 10px,
+    rgba(193, 18, 31, 0.15) 20px
+  );
+  background-size: 40px 40px;
+}
+
+/* Red glow */
+.glow-red {
+  box-shadow: 0 0 40px rgba(193, 18, 31, 0.3), 0 0 80px rgba(193, 18, 31, 0.1);
+}
+
+/* Gold shimmer */
+@keyframes shimmer {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
