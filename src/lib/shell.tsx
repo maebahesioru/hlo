@@ -68,7 +68,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               <a
                 href="https://x.com/hikain_lib"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="ml-2 px-4 py-1.5 text-xs font-bold border border-hlo-red text-hlo-red hover:bg-hlo-red hover:text-white transition-colors"
               >
                 X / Twitter
@@ -103,7 +103,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               <a
                 href="https://x.com/hikain_lib"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="mt-2 px-4 py-3 text-sm font-bold text-center border border-hlo-red text-hlo-red hover:bg-hlo-red hover:text-white transition-colors"
               >
                 X / Twitter をフォロー
@@ -136,7 +136,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-xs">
-              <a href="https://x.com/hikain_lib" target="_blank" rel="noopener noreferrer" className="text-hlo-white/40 hover:text-hlo-red transition-colors font-bold tracking-wider">@hikain_lib</a>
+              <a href="https://x.com/hikain_lib" target="_blank" rel="me noopener noreferrer" className="text-hlo-white/40 hover:text-hlo-red transition-colors font-bold tracking-wider">@hikain_lib</a>
               <span className="text-hlo-white/20">|</span>
               <a href="https://x.com/maebahesioru2" target="_blank" rel="noopener noreferrer" className="text-hlo-white/40 hover:text-hlo-red transition-colors font-bold tracking-wider">@maebahesioru2</a>
               <span className="text-hlo-white/20">|</span>
@@ -155,11 +155,11 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SectionHeading({ overline, title, id }: { overline: string; title: string; id?: string }) {
+export function SectionHeading({ overline, title, id, as: HeadingTag = "h2" }: { overline: string; title: string; id?: string; as?: "h1" | "h2" }) {
   return (
     <div id={id} className="mb-12 md:mb-16 scroll-mt-24">
       <p className="text-hlo-red text-xs font-bold tracking-[0.3em] mb-3">{overline}</p>
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight">{title}</h2>
+      <HeadingTag className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight">{title}</HeadingTag>
       <div className="mt-4 flex gap-1">
         <span className="block w-12 h-1 bg-hlo-red" />
         <span className="block w-4 h-1 bg-hlo-gold" />

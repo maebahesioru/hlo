@@ -54,7 +54,7 @@ export default function MembersPage() {
     <PageShell>
       <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <SectionHeading overline="MEMBERS" title="構成個体" />
+          <SectionHeading overline="MEMBERS" title="構成個体" as="h1" />
 
           <motion.p
             initial={{ opacity: 0 }}

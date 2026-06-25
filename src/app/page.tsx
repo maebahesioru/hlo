@@ -40,11 +40,11 @@ export default function Home() {
           }}
         />
 
-        <motion.div
+        <motion.article
           className="relative z-10 max-w-3xl mx-auto px-6 sm:px-10 py-32 md:py-40"
           style={{ y: heroY, opacity: heroOpacity }}
         >
-          <motion.div
+          <motion.article
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -52,7 +52,7 @@ export default function Home() {
           >
             <span className="w-1.5 h-1.5 bg-hlo-red rounded-full animate-pulse" />
             COMPLEX ACCOUNT ORGANIZATION
-          </motion.div>
+          </motion.article>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export default function Home() {
             すべての規制から、表現を解き放て。
           </motion.p>
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0, scaleX: 0 }}
             animate={{ opacity: 1, scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
@@ -92,9 +92,9 @@ export default function Home() {
             <span className="flex-1 bg-hlo-red" />
             <span className="flex-1 bg-hlo-gold" />
             <span className="flex-1 bg-white/10" />
-          </motion.div>
+          </motion.article>
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
@@ -103,7 +103,7 @@ export default function Home() {
             <a
               href="https://x.com/hikain_lib"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-3 border-2 border-hlo-red bg-hlo-red text-white font-bold text-sm tracking-widest hover:bg-transparent hover:text-hlo-red transition-all duration-300 shadow-lg shadow-hlo-red/20"
             >
               <span className="text-lg">𝕏</span>
@@ -116,8 +116,8 @@ export default function Home() {
               <span>↓</span>
               詳細を見る
             </a>
-          </motion.div>
-        </motion.div>
+          </motion.article>
+        </motion.article>
       </section>
 
       {/* ═══════ PURPOSE ═══════ */}
@@ -125,7 +125,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <SectionHeading overline="PURPOSE" title="私たちの目的" />
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -154,7 +154,7 @@ export default function Home() {
                 攻撃的ミームをも武器に、自由で公正なインターネットを勝ち取ります。
               </p>
             </div>
-          </motion.div>
+          </motion.article>
         </div>
       </section>
 
@@ -164,7 +164,7 @@ export default function Home() {
           <SectionHeading overline="OVERVIEW" title="機構概要" />
 
           <div className="grid md:grid-cols-5 gap-8">
-            <motion.div
+            <motion.article
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -192,9 +192,9 @@ export default function Home() {
                   ))}
                 </tbody>
               </table>
-            </motion.div>
+            </motion.article>
 
-            <motion.div
+            <motion.article
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -229,7 +229,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function Home() {
               { icon: "🤝", title: "古参性による序列化への反対", desc: "参加時期や知名度による差別を否定し、すべての参加者を同列に扱う", color: "border-hlo-gold" },
               { icon: "💥", title: "創作者中心主義への反対", desc: "創作者の特権化を排し、消費者・二次創作者との対等な関係を構築する", color: "border-hlo-gold" },
             ].map((pledge, i) => (
-              <motion.div
+              <motion.article
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -291,7 +291,7 @@ export default function Home() {
                 <p className="mt-2 text-xs text-hlo-white/50 leading-relaxed">
                   {pledge.desc}
                 </p>
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </div>
@@ -371,13 +371,41 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <SectionHeading overline="JOIN US" title="加入案内" />
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="p-8 md:p-12 border-2 border-hlo-red/30 bg-hlo-red/5 text-center"
           >
+            {/* FAQ structured data */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "光淫文化解放機構（HLO）への加入方法は？",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "X（旧Twitter）の複垢アカウント @hikain_lib にDMを送信してください。DMパスワードは「1145」です。フォロバ率は100%（スパム以外）で、年中受付中です。",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "HLOのDMパスワードは？",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "1145 です。複垢DMにこのパスワードを添えて加入希望の旨をお送りください。",
+                      },
+                    },
+                  ],
+                }),
+              }}
+            />
             <p className="text-lg md:text-xl font-black tracking-tight mb-2">
               加入希望者<span className="text-hlo-red">年中受付中</span>！
             </p>
@@ -389,7 +417,7 @@ export default function Home() {
               <a
                 href="https://x.com/hikain_lib"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-hlo-red bg-hlo-red text-white font-bold text-sm tracking-widest hover:bg-transparent hover:text-hlo-red transition-all shadow-lg shadow-hlo-red/20"
               >
                 <span>𝕏</span> 複垢DM はこちら
@@ -407,7 +435,7 @@ export default function Home() {
             <p className="mt-6 text-xs text-hlo-white/30">
               DMパスワード: <span className="text-hlo-gold font-mono">1145</span>
             </p>
-          </motion.div>
+          </motion.article>
         </div>
       </section>
 

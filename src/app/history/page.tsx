@@ -9,7 +9,7 @@ export default function HistoryPage() {
     <PageShell>
       <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <SectionHeading overline="HISTORY" title="沿革" />
+          <SectionHeading overline="HISTORY" title="沿革" as="h1" />
 
           <div className="relative">
             <div className="absolute left-[11px] md:left-1/2 top-0 bottom-0 w-px bg-hlo-red/30 md:-translate-x-px" />
