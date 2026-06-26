@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: "/hlo/ogp.png",
+        url: "ogp.png",
         width: 1200,
         height: 630,
         alt: "光淫文化解放機構 HLO",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: SITE_NAME,
     description: "インターネットの自由と解放を。HLO - Hikain Liberation Organization",
-    images: ["/hlo/ogp.png"],
+    images: ["ogp.png"],
   },
   keywords: [
     "HLO", "光淫文化解放機構", "Hikain Liberation Organization",

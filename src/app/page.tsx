@@ -304,7 +304,7 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 gap-6">
             <motion.a
-              href="/members"
+              href="/hlo/members"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -334,7 +334,7 @@ export default function Home() {
             </motion.a>
 
             <motion.a
-              href="/history"
+              href="/hlo/history"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
