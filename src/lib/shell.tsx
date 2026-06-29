@@ -18,6 +18,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
     { href: "/#ideology", label: "思想" },
     { href: "/members", label: "構成個体" },
     { href: "/history", label: "沿革" },
+    { href: "/rules", label: "憲法" },
     { href: "/#wiki", label: "Wiki" },
     { href: "/#join", label: "加入" },
   ];
