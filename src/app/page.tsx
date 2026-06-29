@@ -182,7 +182,7 @@ export default function Home() {
                     ["代表者", "十字架_mania"],
                     ["代表者ID", "@maebahesioru2"],
                     ["設立", "2026年6月18日"],
-                    ["個体数", "11（ログイン勢6 / オブザーバー5）"],
+                    ["個体数", "12（ログイン勢7 / オブザーバー5）"],
                     ["DMパスワード", "1145"],
                   ].map(([label, value], i) => (
                     <tr key={i} className="border-b border-white/5">

@@ -50,6 +50,7 @@ const memberAvatars: Record<string, string> = {
   Nijikamer: "/hlo/avatars/Nijikamer.jpg",
   MakeHikamaniGre: "/hlo/avatars/MakeHikamaniGre.jpg",
   harupon3rd: "/hlo/avatars/harupon3rd.jpg",
+  D1aperkin: "/hlo/avatars/D1aperkin.jpg",
 };
 
 export const getAvatar = (id: string) => memberAvatars[id.replace("@", "")] || "";
@@ -62,6 +63,7 @@ export const members = {
     { name: "暁美きむら", role: "初期メンバー", id: "@x_inmuou", since: "2026年6月21日" },
     { name: "しうん", role: "メンバー", id: "@YamagamiShinzou", since: "2026年6月23日" },
     { name: "大和_mania", role: "メンバー", id: "@kaihatusyazai", since: "2026年6月24日" },
+    { name: "おむつ_mania", role: "メンバー", id: "@D1aperkin", since: "2026年6月29日" },
   ],
   observer: [
     { name: "抹茶餅_mania / Zespar", role: "オブザーバー・初期メンバー", id: "@qq26k", since: "2026年6月21日" },
