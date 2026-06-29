@@ -64,12 +64,12 @@ export const members = {
     { name: "しうん", role: "メンバー", id: "@YamagamiShinzou", since: "2026年6月23日" },
     { name: "大和_mania", role: "メンバー", id: "@kaihatusyazai", since: "2026年6月24日" },
     { name: "おむつ_mania", role: "メンバー", id: "@D1aperkin", since: "2026年6月29日" },
+    { name: "ヒカマニ文化振興局", role: "メンバー・初期メンバー", id: "@MakeHikamaniGre", since: "2026年6月21日" },
   ],
   observer: [
     { name: "抹茶餅_mania / Zespar", role: "オブザーバー・初期メンバー", id: "@qq26k", since: "2026年6月21日" },
     { name: "pc_mania", role: "オブザーバー", id: "@ponkotu_pasokon", since: "2026年6月21日" },
     { name: "山田太郎", role: "オブザーバー", id: "@Nijikamer", since: "2026年6月21日" },
-    { name: "ヒカマニ文化振興局", role: "オブザーバー・初期メンバー", id: "@MakeHikamaniGre", since: "2026年6月21日" },
   ],
   nonHikamar: [
     { name: "はるぽん", role: "オブザーバー（非カマー）", id: "@harupon3rd", since: "2026年6月21日" },

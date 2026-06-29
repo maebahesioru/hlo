@@ -63,7 +63,7 @@ export default function MembersPage() {
             className="text-sm text-hlo-white/50 mb-8"
           >
             個体数は<strong className="text-hlo-red">12体</strong>。
-            ログイン勢7体、オブザーバー5体。非カマーの個体も1体存在する。
+            ログイン勢8体、オブザーバー4体。非カマーの個体も1体存在する。
           </motion.p>
 
           {/* ログイン勢 */}
