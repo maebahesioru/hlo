@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://maebahesioru.github.io/hlo";
+const SITE_URL = "http://hlo.hikamer.f5.si";
 
 export const metadata: Metadata = {
   title: "憲法",

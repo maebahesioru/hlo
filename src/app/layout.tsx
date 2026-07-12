@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const SITE_URL = "https://maebahesioru.github.io/hlo";
+const SITE_URL = "http://hlo.hikamer.f5.si";
 const SITE_NAME = "光淫文化解放機構 | HLO";
 const DESCRIPTION =
   "光淫文化解放機構（HLO）は、インターネット空間の自由を最大化し、著作権廃止・AI推進・匿名化推進を掲げる複垢組織です。2026年6月18日設立。";
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   icons: {
     icon: [
-      { url: "/hlo/favicon.ico", sizes: "256x256", type: "image/x-icon" },
-      { url: "/hlo/icon.png", sizes: "256x256", type: "image/png" },
+      { url: "/favicon.ico", sizes: "256x256", type: "image/x-icon" },
+      { url: "/icon.png", sizes: "256x256", type: "image/png" },
     ],
-    apple: "/hlo/icon.png",
+    apple: "/icon.png",
   },
   openGraph: {
     title: SITE_NAME,

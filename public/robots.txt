@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maebahesioru.github.io/hlo/sitemap.xml
+Sitemap: http://hlo.hikamer.f5.si/sitemap.xml

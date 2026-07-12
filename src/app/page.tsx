@@ -304,7 +304,7 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.a
-              href="/hlo/members"
+              href="/members"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -313,7 +313,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
-                  src="/hlo/members-bg.jpg"
+                  src="/members-bg.jpg"
                   alt="HLO構成個体 - メンバー一覧"
                   width="800"
                   height="600"
@@ -334,7 +334,7 @@ export default function Home() {
             </motion.a>
 
             <motion.a
-              href="/hlo/history"
+              href="/history"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -343,7 +343,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
-                  src="/hlo/history-bg.jpg"
+                  src="/history-bg.jpg"
                   alt="HLO沿革 - 設立からのあゆみ"
                   width="800"
                   height="600"
@@ -364,7 +364,7 @@ export default function Home() {
             </motion.a>
 
             <motion.a
-              href="/hlo/rules"
+              href="/rules"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -373,7 +373,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
                 <img
-                  src="/hlo/rules-bg.jpg"
+                  src="/rules-bg.jpg"
                   alt="HLO憲法 - 光淫文化解放機構憲法"
                   width="800"
                   height="600"

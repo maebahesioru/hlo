@@ -45,7 +45,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-3 group">
               <img
-                src="/hlo/avatars/hikain_lib.jpg"
+                src="/avatars/hikain_lib.jpg"
                 alt="HLO"
                 width="400"
                 height="400"
@@ -125,7 +125,7 @@ export default function PageShell({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               <img
-                src="/hlo/avatars/hikain_lib.jpg"
+                src="/avatars/hikain_lib.jpg"
                 alt="HLO"
                 width="400"
                 height="400"
