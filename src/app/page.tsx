@@ -325,7 +325,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-lg font-black tracking-tight group-hover:text-hlo-red transition-colors">構成個体</h3>
                 <p className="mt-1 text-xs text-hlo-white/50 leading-relaxed">
-                  ログイン勢6名・オブザーバー5名、全11名のメンバーを紹介
+                  ログイン勢10名・オブザーバー4名、全14名のメンバーを紹介
                 </p>
                 <p className="mt-3 text-xs font-bold tracking-widest text-hlo-red group-hover:translate-x-1 transition-transform inline-block">
                   メンバー一覧を見る →
