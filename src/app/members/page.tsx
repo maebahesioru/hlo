@@ -62,8 +62,8 @@ export default function MembersPage() {
             viewport={{ once: true }}
             className="text-sm text-hlo-white/50 mb-8"
           >
-            個体数は<strong className="text-hlo-red">14体</strong>。
-            ログイン勢10体、オブザーバー4体。非カマーの個体も1体存在する。
+            個体数は<strong className="text-hlo-red">16体</strong>。
+            ログイン勢11体、オブザーバー5体。非カマーの個体も2体存在する。
           </motion.p>
 
           {/* ログイン勢 */}

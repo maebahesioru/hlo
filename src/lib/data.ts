@@ -53,6 +53,8 @@ const memberAvatars: Record<string, string> = {
   D1aperkin: "/avatars/D1aperkin.jpg",
   watanabe_hakkyo: "/avatars/watanabe_hakkyo.jpg",
   M_O_M_E_N_T_U_M: "/avatars/M_O_M_E_N_T_U_M.jpg",
+  np_jns: "/avatars/np_jns.jpg",
+  SOUHIKAMERcrl: "/avatars/SOUHIKAMERcrl.jpg",
 };
 
 export const getAvatar = (id: string) => memberAvatars[id.replace("@", "")] || "";
@@ -69,6 +71,7 @@ export const members = {
     { name: "ヒカマニ文化振興局", role: "メンバー・初期メンバー", id: "@MakeHikamaniGre", since: "2026年6月21日" },
     { name: "発狂TV", role: "メンバー", id: "@watanabe_hakkyo", since: "2026年6月29日" },
     { name: "L7", role: "メンバー", id: "@M_O_M_E_N_T_U_M", since: "2026年6月29日" },
+    { name: "SOU", role: "メンバー", id: "@SOUHIKAMERcrl", since: "2026年7月12日" },
   ],
   observer: [
     { name: "抹茶餅_mania / Zespar", role: "オブザーバー・初期メンバー", id: "@qq26k", since: "2026年6月21日" },
@@ -77,6 +80,7 @@ export const members = {
   ],
   nonHikamar: [
     { name: "はるぽん", role: "オブザーバー（非カマー）", id: "@harupon3rd", since: "2026年6月21日" },
+    { name: "ペングー", role: "ログイン（非カマー）", id: "@np_jns", since: "2026年7月12日" },
   ],
 };
 

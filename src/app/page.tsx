@@ -182,7 +182,7 @@ export default function Home() {
                     ["代表者", "十字架_mania"],
                     ["代表者ID", "@maebahesioru2"],
                     ["設立", "2026年6月18日"],
-                    ["個体数", "14（ログイン勢10 / オブザーバー4）"],
+                    ["個体数", "16（ログイン勢11 / オブザーバー5）"],
                     ["DMパスワード", "1145"],
                   ].map(([label, value], i) => (
                     <tr key={i} className="border-b border-white/5">
@@ -325,7 +325,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-lg font-black tracking-tight group-hover:text-hlo-red transition-colors">構成個体</h3>
                 <p className="mt-1 text-xs text-hlo-white/50 leading-relaxed">
-                  ログイン勢10名・オブザーバー4名、全14名のメンバーを紹介
+                  ログイン勢11名・オブザーバー5名、全16名のメンバーを紹介
                 </p>
                 <p className="mt-3 text-xs font-bold tracking-widest text-hlo-red group-hover:translate-x-1 transition-transform inline-block">
                   メンバー一覧を見る →
