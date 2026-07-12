@@ -302,7 +302,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <SectionHeading overline="EXPLORE" title="さらに詳しく" />
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.a
               href="/hlo/members"
               initial={{ opacity: 0, y: 20 }}
@@ -362,6 +362,37 @@ export default function Home() {
                 </p>
               </div>
             </motion.a>
+
+            <motion.a
+              href="/hlo/rules"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="group border-2 border-white/10 bg-white/[0.02] hover:border-hlo-red/40 transition-all overflow-hidden"
+            >
+              <div className="aspect-[4/3] overflow-hidden border-b border-white/10">
+                <img
+                  src="/hlo/rules-bg.jpg"
+                  alt="HLO憲法 - 光淫文化解放機構憲法"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-black tracking-tight group-hover:text-hlo-red transition-colors">憲法</h3>
+                <p className="mt-1 text-xs text-hlo-white/50 leading-relaxed">
+                  全11章55条。インターネットの自由と解放を掲げる最高規範
+                </p>
+                <p className="mt-3 text-xs font-bold tracking-widest text-hlo-red group-hover:translate-x-1 transition-transform inline-block">
+                  憲法を読む →
+                </p>
+              </div>
+            </motion.a>
+
           </div>
         </div>
       </section>
